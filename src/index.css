@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.25);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.5px);
+
+
+
+& .blink{
+    height:17px;
+    width:17px;
+    background-color:red;
+    border-radius:50%;
+   animation: ani 0.5s linear infinite;
+
+    
+}
+
+}
+@keyframes ani{ 
+    From{
+background-color:red;
+
+    }
+    to{
+        background-color:black;
+    }
+}
+
+.section1 {
+    background-image:url('../public/image/wall.jpg');
+    background-repeat : no-repeat;
+    background-size : cover;
+}
